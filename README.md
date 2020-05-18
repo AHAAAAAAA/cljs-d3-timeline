@@ -1,14 +1,16 @@
 # CLJS-D3-Timeline
 
-Demo interactive d3 timeline, implemented in CLJS.
+Interactive d3 timeline, implemented in CLJS.
+
+![Screenshot](https://i.imgur.com/P6EE89w.png)
 
 ## Overview
 
-This is a quick demo of a d3 chart implemented in cljs. While d3 is a very popular library, there aren't many resources demonstrating cljs interop with it. Sharing this in hopes it answers a few people's google searches.
+This is a very quick demo of a d3 chart implemented in cljs. Sharing this in hopes it helps answer a few people's google searches. 
 
 `timeline.data` - Generatively create data with spec and shape it.
 `timeline.timeline` - Creates React component and implements all the data-specific logic.
-`timeline.d3` - Generic D3 implementations.
+`timeline.d3` - Generic D3 functions.
 `timeline.core` - Default entry point.
 
 
@@ -24,6 +26,7 @@ This is a quick demo of a d3 chart implemented in cljs. While d3 is a very popul
 `.on` - adds an event handler to a selection. It takes 2 args: event type and a handler fn. The handler fn receives 2 args, data and index.
 `.call` - calls a function (only once on initialization) with the selection (being acted on) passed as the first argument (+ any additional ones you pass). Idiomatic way of calling d3 functions that generate chart components.
 `.node` - gets the first non-null html element of a selection. Useful for grabbing bounding boxes, and x/y offsets for interactive functions.
+`this-as this` - CLJS standard fn to get DOM elt being manipulated.
 `scales` - 2 sets of scales for each of the x, y chart. Provides a way to linearly map pixel offset values to dates and vice versa (`.invert`)
 
 
