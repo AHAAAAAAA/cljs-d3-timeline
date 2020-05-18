@@ -221,7 +221,7 @@
                           (.attr "transform" (translate-str (+ (-> config :padding :left) (-> config :label-width)) 5)))
         events-group  (-> chart-svg (.append "g") (.classed "events" true)
                           ;; Chops off the empty spaces so our event handlers work on the base grid
-                          (.attr "clip-path" "url(#events-clipper)")
+                          (.attr "clipPath" "url(#events-clipper)")
                           (.attr "transform" (translate-str (+ (-> config :padding :left) (-> config :label-width)) 0)))
         stamp-group   (-> chart-svg (.append "g")
                           (.classed "timestamp" true)
