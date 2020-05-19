@@ -8,10 +8,10 @@ Interactive d3 timeline, implemented in CLJS.
 
 This is a very quick demo of a d3 chart implemented in cljs. Sharing this in hopes it helps answer a few people's google searches. 
 
-`timeline.data` - Generatively create data with spec and shape it.
-`timeline.timeline` - Creates React component and implements all the data-specific logic.
-`timeline.d3` - Generic D3 functions.
-`timeline.core` - Default entry point.
+- `timeline.data` - Generatively create data with spec and shape it.
+- `timeline.timeline` - Creates React component and implements all the data-specific logic.
+- `timeline.d3` - Generic D3 functions.
+- `timeline.core` - Default entry point.
 
 
 ## D3 Glossary
